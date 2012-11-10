@@ -1,9 +1,9 @@
 Summary:	Video Acceleration API
 Name:		libva
-Version:	1.0.16
-Release:        1
+Version:	1.1.0
+Release:        2
 Source0:	http://cgit.freedesktop.org/libva/snapshot/%{name}-%{version}.tar.bz2
-# Source0-md5:	49d74e1e4f8a4937af7a62d457f61106
+# Source0-md5:	23dfec81a383359ad91aaf00e3ca0f2b
 License:	BSD
 Group:		Libraries
 URL:		http://www.freedesktop.org/wiki/Software/vaapi
@@ -78,12 +78,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/putsurface
 %attr(755,root,root) %{_bindir}/vainfo
 
-%attr(755,root,root) %ghost %{_libdir}/libva-egl.so.1
+%attr(755,root,root) %ghost %{_libdir}/libva-drm.so.1
 %attr(755,root,root) %ghost %{_libdir}/libva-glx.so.1
 %attr(755,root,root) %ghost %{_libdir}/libva-tpi.so.1
 %attr(755,root,root) %ghost %{_libdir}/libva-x11.so.1
 %attr(755,root,root) %ghost %{_libdir}/libva.so.1
-%attr(755,root,root) %{_libdir}/libva-egl.so.*.*.*
+%attr(755,root,root) %{_libdir}/libva-drm.so.*.*.*
 %attr(755,root,root) %{_libdir}/libva-glx.so.*.*.*
 %attr(755,root,root) %{_libdir}/libva-tpi.so.*.*.*
 %attr(755,root,root) %{_libdir}/libva-x11.so.*.*.*
@@ -94,13 +94,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libva-egl.so
+%attr(755,root,root) %{_libdir}/libva-drm.so
 %attr(755,root,root) %{_libdir}/libva-glx.so
 %attr(755,root,root) %{_libdir}/libva-tpi.so
 %attr(755,root,root) %{_libdir}/libva-x11.so
 %attr(755,root,root) %{_libdir}/libva.so
 %{_includedir}/va
-%{_pkgconfigdir}/libva-egl.pc
+%{_pkgconfigdir}/libva-drm.pc
 %{_pkgconfigdir}/libva-glx.pc
 %{_pkgconfigdir}/libva-tpi.pc
 %{_pkgconfigdir}/libva-x11.pc
