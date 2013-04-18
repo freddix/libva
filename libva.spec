@@ -1,9 +1,9 @@
 Summary:	Video Acceleration API
 Name:		libva
-Version:	1.1.0
-Release:        2
+Version:	1.1.1
+Release:        1
 Source0:	http://cgit.freedesktop.org/libva/snapshot/%{name}-%{version}.tar.bz2
-# Source0-md5:	23dfec81a383359ad91aaf00e3ca0f2b
+# Source0-md5:	2266210dadd9d44db97e1ca232104fcf
 License:	BSD
 Group:		Libraries
 URL:		http://www.freedesktop.org/wiki/Software/vaapi
