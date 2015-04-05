@@ -1,9 +1,9 @@
 Summary:	Video Acceleration API
 Name:		libva
-Version:	1.4.1
+Version:	1.5.1
 Release:        1
 Source0:	http://cgit.freedesktop.org/libva/snapshot/%{name}-%{version}.tar.bz2
-# Source0-md5:	a835a391c04233c82eb8a446ec5ae6d5
+# Source0-md5:	ce7de42d5cf8a1c2f818bf92e744cb72
 License:	BSD
 Group:		Libraries
 URL:		http://www.freedesktop.org/wiki/Software/vaapi
@@ -73,6 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING NEWS
 %attr(755,root,root) %{_bindir}/avcenc
 %attr(755,root,root) %{_bindir}/h264encode
+%attr(755,root,root) %{_bindir}/jpegenc
 %attr(755,root,root) %{_bindir}/loadjpeg
 %attr(755,root,root) %{_bindir}/mpeg2vaenc
 %attr(755,root,root) %{_bindir}/mpeg2vldemo
